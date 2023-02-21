@@ -1,0 +1,158 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2107000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the techfios login page",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_is_on_the_techfios_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-26T21:59:17.904Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5905000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.LoginStepDefinition.beforeRun()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "User should be able to login with valid credential",
+        "description": "",
+        "id": "techfios-billing-login-page-functionality-validation-with-data-from-db;user-should-be-able-to-login-with-valid-credential",
+        "after": [
+          {
+            "result": {
+              "duration": 787000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.LoginStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3440000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters \"username\" from mysql database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 12
+                }
+              ],
+              "location": "steps.LoginStepDefinition.user_enters_from_mysql_database(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3137000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enters \"password\" from mysql database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 12
+                }
+              ],
+              "location": "steps.LoginStepDefinition.user_enters_from_mysql_database(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4665000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks on sign in button",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_clicks_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 227000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should land on dashboard page",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_should_land_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DbFeature"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@DbScenario1"
+          },
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Techfios billing login page functionality validation with data from DB",
+    "description": "",
+    "id": "techfios-billing-login-page-functionality-validation-with-data-from-db",
+    "keyword": "Feature",
+    "uri": "classpath:features/loginWithDtaFromDb.feature",
+    "tags": [
+      {
+        "name": "@DbFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 12
+        }
+      }
+    ]
+  }
+]
